@@ -7,7 +7,7 @@ fun main() {
     // Inicializa uma variável para armazenar a soma dos números pares
     var soma = 0
 
-    // Inicia um loop 'for' que itera de 1 até 100 (inclusive)
+    // Inicia um loop 'for' que itera de 1 até 100 
     for (i in 1..100) {
         // Verifica se o número atual (i) é par
         if (i % 2 == 0) {
