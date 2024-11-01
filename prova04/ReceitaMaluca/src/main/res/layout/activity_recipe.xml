@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/recipeTitleTextView"
+        android:layout_width="362dp"
+        android:layout_height="44dp"
+        android:text="Nome da Receita"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingredientsTextView"
+        android:layout_width="349dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:text="Ingredientes Selecionados"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipeTitleTextView" />
+
+    <TextView
+        android:id="@+id/recipeTextView"
+        android:layout_width="345dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="48dp"
+        android:text="Passo a Passo da Receita"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsTextView" />
+
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="378dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="68dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipeTextView" />
+
+    <Button
+        android:id="@+id/shareRecipeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/marrom1"
+        android:padding="12dp"
+        android:text="Compartilhar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
